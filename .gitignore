@@ -1,0 +1,19 @@
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+venv/
+.venv/
+
+# EnergyPlus intermediate files
+outputs_step1/generated_idf/
+outputs_step1/runs/
+
+# Temporary validation folders
+validation_run_*/
+
+# Operating system files
+.DS_Store
+Thumbs.db
