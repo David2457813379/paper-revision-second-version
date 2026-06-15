@@ -1,0 +1,18 @@
+﻿model,search_method,cv_folds,scoring,alpha,l1_ratio,polynomial_degree,interaction_only,include_bias,n_polynomial_features,n_iter,subsample,n_estimators,max_depth,learning_rate,colsample_bytree,best_cv_rmse,num_leaves,min_samples_split,min_samples_leaf,max_features,hidden_layer_sizes,activation,n_neighbors,p,weights,gamma,epsilon,C
+RidgeCV,embedded_cv_or_fixed,3,not_applicable,0.49238826317067363,,,,,,,,,,,,,,,,,,,,,,,,
+ElasticNetCV,embedded_cv_or_fixed,3,not_applicable,0.07443803013251689,0.9,,,,,,,,,,,,,,,,,,,,,,,
+Linear,embedded_cv_or_fixed,3,not_applicable,,,,,,,,,,,,,,,,,,,,,,,,,
+LassoCV,embedded_cv_or_fixed,3,not_applicable,0.11937766417144358,,,,,,,,,,,,,,,,,,,,,,,,
+Poly2-ElasticNetCV,embedded_cv_or_fixed,3,not_applicable,0.7847599703514607,0.9,2.0,False,False,189.0,,,,,,,,,,,,,,,,,,,
+Poly3-RidgeCV,embedded_cv_or_fixed,3,not_applicable,0.1,,3.0,False,False,1329.0,,,,,,,,,,,,,,,,,,,
+XGBoost,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,0.9,800.0,3.0,0.02,0.9,19.704084267235867,,,,,,,,,,,,
+LightGBM,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,1.0,400.0,,0.02,1.0,20.635725137263563,31.0,,,,,,,,,,,
+ExtraTrees,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,,800.0,,,,19.837207020083113,,4.0,4.0,,,,,,,,,
+GB,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,0.7,500.0,3.0,0.13999999999999999,,20.20164905627478,,,,,,,,,,,,
+RandomForest,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,,800.0,,,,21.44520210974268,,4.0,4.0,,,,,,,,,
+Poly2-RidgeCV,embedded_cv_or_fixed,3,not_applicable,52.98316906283707,,2.0,False,False,189.0,,,,,,,,,,,,,,,,,,,
+Poly2-Interaction-RidgeCV,embedded_cv_or_fixed,3,not_applicable,32.90344562312668,,2.0,True,False,171.0,,,,,,,,,,,,,,,,,,,
+MLP,RandomizedSearchCV,3,neg_root_mean_squared_error,0.012915496650148827,,,,,,3.0,,,,,,27.03350334414598,,,,,"(64, 32)",relu,,,,,,
+DecisionTree,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,,,12.0,,,24.743210220478428,,4.0,8.0,,,,,,,,,
+KNN,GridSearchCV,3,neg_root_mean_squared_error,,,,,,,,,,,,,28.99599280923209,,,,,,,9.0,1.0,distance,,,
+SVR-RBF,RandomizedSearchCV,3,neg_root_mean_squared_error,,,,,,,3.0,,,,,,32.854824289026844,,,,,,,,,,auto,0.1794736842105263,3.79269019073225
